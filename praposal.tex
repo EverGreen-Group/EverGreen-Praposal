@@ -1,0 +1,658 @@
+\documentclass{article}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{caption}
+
+\begin{document}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-001 \\
+        \hline
+        \textbf{Use Case Name} & Validate Tea Leave Stock \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & None \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager checks the current stock of tea leaves to ensure accuracy. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Tea leaves are received and entered into the inventory system.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Tea Leave Stock: The Inventory Manager selects the "Validate Tea Leave Stock" option.
+            \item Display Stock: The system displays current tea leave stock.
+            \item Verify Stock: The Inventory Manager verifies stock levels.
+            \item Confirm Validation: The Inventory Manager confirms the validation.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Tea leave stock levels are validated and updated if necessary.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Validate Tea Leave Stock}
+    \label{tab:use-case-validate-tea-leave-stock}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-002 \\
+        \hline
+        \textbf{Use Case Name} & Daily Machine Allocation \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & None \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager allocates machines for daily operations. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Machines are available and maintained.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Machine Allocation: The Inventory Manager selects the "Daily Machine Allocation" option.
+            \item View Available Machines: The system displays available machines.
+            \item Allocate Machines: The Inventory Manager allocates machines for daily tasks.
+            \item Confirm Allocation: The Inventory Manager confirms the machine allocation.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Machines are allocated for daily operations.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Daily Machine Allocation}
+    \label{tab:use-case-daily-machine-allocation}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-003 \\
+        \hline
+        \textbf{Use Case Name} & Product Manage \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & None \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager manages products in the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Products are entered into the system.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Product Management: The Inventory Manager selects the "Product Manage" option.
+            \item View Products: The system displays a list of products.
+            \item Manage Products: The Inventory Manager adds, updates, or deletes products.
+            \item Confirm Management: The Inventory Manager confirms the changes.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Products are managed and updated in the system.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Product Manage}
+    \label{tab:use-case-product-manage}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-004 \\
+        \hline
+        \textbf{Use Case Name} & See Tea Order \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & None \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager views tea orders in the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Tea orders are entered into the system.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Tea Orders: The Inventory Manager selects the "See Tea Order" option.
+            \item View Orders: The system displays a list of tea orders.
+            \item Review Orders: The Inventory Manager reviews the orders.
+            \item Confirm Review: The Inventory Manager confirms the review.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Tea orders are reviewed.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: See Tea Order}
+    \label{tab:use-case-see-tea-order}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-005 \\
+        \hline
+        \textbf{Use Case Name} & Daily Stock Status Update \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & None \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager updates the daily stock status in the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Stock data is available in the system.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Stock Status: The Inventory Manager selects the "Daily Stock Status Update" option.
+            \item View Stock Status: The system displays current stock status.
+            \item Update Stock Status: The Inventory Manager updates the stock status.
+            \item Confirm Update: The Inventory Manager confirms the stock status update.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Daily stock status is updated in the system.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Daily Stock Status Update}
+    \label{tab:use-case-daily-stock-status-update}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-006 \\
+        \hline
+        \textbf{Use Case Name} & Fertilizer Stock Manage \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & None \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager manages the fertilizer stock in the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Fertilizer stock data is available in the system.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Fertilizer Stock: The Inventory Manager selects the "Fertilizer Stock Manage" option.
+            \item View Fertilizer Stock: The system displays current fertilizer stock.
+            \item Manage Fertilizer Stock: The Inventory Manager adds, updates, or deletes fertilizer stock.
+            \item Confirm Management: The Inventory Manager confirms the changes.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Fertilizer stock is managed and updated in the system.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Fertilizer Stock Manage}
+    \label{tab:use-case-fertilizer-stock-manage}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-007 \\
+        \hline
+        \textbf{Use Case Name} & Add Fertilizer Stock \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & Fertilizer Stock Manage \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager adds new fertilizer stock to the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Fertilizer stock data is available for entry.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Fertilizer Stock: The Inventory Manager selects the "Fertilizer Stock Manage" option.
+            \item Add Fertilizer Stock: The Inventory Manager adds new fertilizer stock data.
+            \item Confirm Addition: The Inventory Manager confirms the addition of the fertilizer stock.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item New fertilizer stock is added to the system.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Add Fertilizer Stock}
+    \label{tab:use-case-add-fertilizer-stock}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-008 \\
+        \hline
+        \textbf{Use Case Name} & Update Fertilizer Stock \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & Fertilizer Stock Manage \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager updates the fertilizer stock in the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Fertilizer stock data is available for update.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Fertilizer Stock: The Inventory Manager selects the "Fertilizer Stock Manage" option.
+            \item Update Fertilizer Stock: The Inventory Manager updates the fertilizer stock data.
+            \item Confirm Update: The Inventory Manager confirms the update of the fertilizer stock.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Fertilizer stock is updated in the system.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Update Fertilizer Stock}
+    \label{tab:use-case-update-fertilizer-stock}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3} % Increase vertical spacing within cells
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-009 \\
+        \hline
+        \textbf{Use Case Name} & New Product Add \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Extends} & Product Manage \\
+        \hline
+        \textbf{Description} & This use case describes how the Inventory Manager adds a new product to the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Product data is available for entry.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Login: The Inventory Manager logs into the system.
+            \item Access Product Management: The Inventory Manager selects the "Product Manage" option.
+            \item Add New Product: The Inventory Manager adds new product data.
+            \item Confirm Addition: The Inventory Manager confirms the addition of the new product.
+        \end{enumerate} \\
+        \hline
+        \textbf{Alternate Scenarios} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item None
+        \end{itemize} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item New product is added to the system.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: New Product Add}
+    \label{tab:use-case-new-product-add}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-010 \\
+        \hline
+        \textbf{Use Case Name} & Product Delete \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Description} & The Inventory Manager deletes a product from the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Product details are available.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Inventory Manager logs into the system.
+            \item Inventory Manager selects the "Product Delete" option.
+            \item System displays a list of products.
+            \item Inventory Manager selects the product to delete.
+            \item Inventory Manager confirms the deletion.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Product is deleted from the system.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item If product cannot be deleted, the Inventory Manager investigates the reason.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Product Delete}
+    \label{tab:use-case-product-delete}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-011 \\
+        \hline
+        \textbf{Use Case Name} & Add Stock \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Description} & The Inventory Manager adds new stock to the system. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item New stock is received.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Inventory Manager logs into the system.
+            \item Inventory Manager selects the "Add Stock" option.
+            \item System prompts for stock details.
+            \item Inventory Manager enters the details.
+            \item Inventory Manager confirms the addition.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item New stock is added to the system.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item If stock details are missing, the Inventory Manager adds them.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Add Stock}
+    \label{tab:use-case-add-stock}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-012 \\
+        \hline
+        \textbf{Use Case Name} & Sell Stock \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Description} & The Inventory Manager records the sale of stock. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Stock is ready for sale.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Inventory Manager logs into the system.
+            \item Inventory Manager selects the "Sell Stock" option.
+            \item System prompts for sale details.
+            \item Inventory Manager enters the details.
+            \item Inventory Manager confirms the sale.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Stock sale is recorded in the system.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item If sale details are missing, the Inventory Manager adds them.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Sell Stock}
+    \label{tab:use-case-sell-stock}
+\end{table}
+
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-013 \\
+        \hline
+        \textbf{Use Case Name} & Daily Stock Update \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Description} & The Inventory Manager updates the stock status daily. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Stock details are available.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Inventory Manager logs into the system.
+            \item Inventory Manager selects the "Daily Stock Update" option.
+            \item System displays current stock status.
+            \item Inventory Manager updates the stock status as necessary.
+            \item Inventory Manager confirms the update.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Stock status is updated for the day.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item If stock details are incorrect, the Inventory Manager corrects them.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Daily Stock Update}
+    \label{tab:use-case-daily-stock-update}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-014 \\
+        \hline
+        \textbf{Use Case Name} & Fertilizer Order to Factory \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Description} & The Inventory Manager places a fertilizer order to the factory. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Fertilizer is needed.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Inventory Manager logs into the system.
+            \item Inventory Manager selects the "Fertilizer Order to Factory" option.
+            \item System prompts for order details.
+            \item Inventory Manager enters the details.
+            \item Inventory Manager confirms the order.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Fertilizer order is placed to the factory.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item If order details are missing, the Inventory Manager adds them.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Fertilizer Order to Factory}
+    \label{tab:use-case-fertilizer-order-to-factory}
+\end{table}
+
+\begin{table}[!ht]
+    \centering
+    \renewcommand{\arraystretch}{1.3}
+    \begin{tabularx}{\textwidth}{|l|X|}
+        \hline
+        \textbf{Use Case ID} & UC-015 \\
+        \hline
+        \textbf{Use Case Name} & Inventory Report Generate \\
+        \hline
+        \textbf{Primary Actor(s)} & Inventory Manager \\
+        \hline
+        \textbf{Description} & The Inventory Manager generates inventory reports. \\
+        \hline
+        \textbf{Pre-Conditions} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Inventory data is available.
+        \end{enumerate} \\
+        \hline
+        \textbf{Main Scenarios} & 
+        \begin{enumerate}[label=\arabic*.,itemsep=0pt]
+            \item Inventory Manager logs into the system.
+            \item Inventory Manager selects the "Inventory Report Generate" option.
+            \item System prompts for report parameters.
+            \item Inventory Manager enters the parameters.
+            \item Inventory Manager confirms the generation.
+        \end{enumerate} \\
+        \hline
+        \textbf{Post-Conditions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item Inventory report is generated.
+        \end{itemize} \\
+        \hline
+        \textbf{Exceptions} & 
+        \begin{itemize}[label=--,itemsep=0pt]
+            \item If parameters are missing, the Inventory Manager adds them.
+        \end{itemize} \\
+        \hline
+    \end{tabularx}
+    \caption{Use Case: Inventory Report Generate}
+    \label{tab:use-case-inventory-report-generate}
+\end{table}
+
+
+\end{document}
+
